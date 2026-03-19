@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Orizzonte Sud</title>
+    <meta name="robots" content="noindex, follow"> <!-- Non serve indicizzare la privacy -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-sx" style="text-decoration: none; display: inline-block;">
+                <div style="display: flex; flex-direction: column; width: max-content;">
+                    <div style="display: flex; align-items: baseline;">
+                        <span style="font-family: 'Montserrat', sans-serif; font-size: 2.2rem; color: #00205B; font-weight: 700; letter-spacing: -0.5px; line-height: 1; margin-right: 8px;">ORIZZONTE</span>
+                        <span style="font-family: 'Montserrat', sans-serif; font-size: 2.2rem; color: #00205B; font-weight: 300; letter-spacing: -0.5px; line-height: 1;">SUD</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 4px;">
+                        <div style="height: 5px; background-color: #98002E; width: 68%;"></div>
+                        <span style="font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: #00205B; font-weight: 700; letter-spacing: 0.5px; line-height: 1; padding-top: 2px;">DAL 1983</span>
+                    </div>
+                </div>
+            </a>
+            <div class="menu-toggle" id="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links" id="nav-menu">
+                <a href="index.html">HOME</a>
+                <a href="contatti.html">CONTATTI</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 120px 20px 80px; background-color: #fcfcfc;">
+        <div class="container" style="max-width: 800px; margin: 0 auto; background: white; padding: 50px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+            <h1 style="color: #00205B; font-size: 2.5rem; margin-bottom: 30px; border-bottom: 2px solid #98002E; padding-bottom: 10px;">Privacy Policy</h1>
+            
+            <div style="color: #555; line-height: 1.8; font-size: 1rem;">
+                <p><strong>Informativa sul trattamento dei dati personali (Art. 13 Regolamento UE 2016/679 - GDPR)</strong></p>
+                
+                <h3 style="color: #98002E; margin-top: 30px; margin-bottom: 10px;">1. Titolare del Trattamento</h3>
+                <p>Il Titolare del trattamento è <strong>Orizzonte Sud SAS</strong>, con sede legale in Via Alessandro Manzoni 115, 80123 Napoli (NA), P.IVA IT04276540632. Email di contatto: info@orizzontesud.it.</p>
+
+                <h3 style="color: #98002E; margin-top: 30px; margin-bottom: 10px;">2. Finalità del Trattamento</h3>
+                <p>I dati personali forniti volontariamente dagli utenti tramite i moduli di contatto o candidatura presenti sul sito verranno trattati esclusivamente per:<br>
+                - Rispondere alle richieste di informazioni o consulenza.<br>
+                - Valutare le candidature spontanee inviate tramite la sezione "Lavora con Noi".<br>
+                - Adempiere ad eventuali obblighi di legge.</p>
+
+                <h3 style="color: #98002E; margin-top: 30px; margin-bottom: 10px;">3. Base Giuridica</h3>
+                <p>Il trattamento si basa sul consenso espresso dell'utente (tramite spunta dell'apposita casella nei form) e sull'esecuzione di misure precontrattuali adottate su richiesta dello stesso.</p>
+
+                <h3 style="color: #98002E; margin-top: 30px; margin-bottom: 10px;">4. Conservazione dei Dati</h3>
+                <p>I dati saranno conservati per il tempo strettamente necessario a gestire la richiesta o la candidatura, e comunque non oltre i termini previsti dalla legge.</p>
+
+                <h3 style="color: #98002E; margin-top: 30px; margin-bottom: 10px;">5. Diritti dell'Interessato</h3>
+                <p>In qualunque momento, l'utente ha il diritto di richiedere al Titolare l'accesso ai propri dati, la rettifica, la cancellazione degli stessi, la limitazione del trattamento o di opporsi al trattamento (Art. 15 e ss. del GDPR). Le richieste vanno rivolte via email a info@orizzontesud.it.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="background-color: white; padding: 50px 20px 20px; border-top: 1px solid #eee; font-size: 0.9rem;">
+        <div style="text-align: center; color: #aaa; padding-top: 20px; font-size: 0.8rem;">
+            &copy; 2026 ORIZZONTE SUD SAS - P.IVA: IT04276540632
+        </div>
+    </footer>
+<!-- SCRIPT MENU MOBILE (Semplificato per Privacy) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const navMenu = document.getElementById('nav-menu');
+
+            // Apri/Chiudi menu principale su mobile
+            if(menuBtn && navMenu) {
+                menuBtn.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* ORIZZONTE SUD - GLOBAL STYLESHEET (V 7.0 - MASTER TEMPLATE) */
+
+:root { --lux-ruby: #98002E; --lux-blue: #00205B; --white: #ffffff; --text-dark: #333333; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); line-height: 1.6; background-color: var(--white); overflow-x: hidden; }
+h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+
+/* HEADER & MENU */
+header { background: rgba(255, 255, 255, 0.98); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; max-width: 1400px; margin: 0 auto; position: relative; }
+
+/* MENU DESKTOP & DROPDOWN */
+.nav-links { display: flex; gap: 25px; align-items: center; }
+.nav-links a { font-family: 'Montserrat', sans-serif; font-weight: 600; color: #555; font-size: 0.9rem; text-decoration: none; transition: 0.3s; }
+.nav-links a:hover { color: var(--lux-ruby); }
+
+.dropdown { position: relative; display: inline-block; padding: 10px 0; }
+.dropdown-content { display: none; position: absolute; background-color: #ffffff; min-width: 240px; box-shadow: 0px 10px 20px rgba(0,0,0,0.1); z-index: 1001; border-radius: 8px; overflow: hidden; top: 100%; left: 0; border-top: 3px solid var(--lux-ruby); }
+.dropdown-content a { color: #555; padding: 12px 16px; text-decoration: none; display: block; border-bottom: 1px solid #f0f0f0; font-size: 0.85rem; }
+.dropdown-content a:hover { background-color: #f9f9f9; color: var(--lux-ruby); padding-left: 20px; }
+.dropdown:hover .dropdown-content { display: block; }
+
+/* HAMBURGER ICON (Nascosto su PC) */
+.menu-toggle { display: none; font-size: 1.8rem; color: var(--lux-blue); cursor: pointer; }
+
+/* HERO */
+.hero, .hero-product { background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+.hero { height: 80vh; }
+.hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+.hero-product, .hero.hero-small { height: 45vh; min-height: 350px; background-color: var(--lux-blue); }
+.hero-product h1, .hero.hero-small h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 10px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+.hero::before, .hero-product::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%); }
+.hero-content { position: relative; z-index: 2; max-width: 900px; padding: 20px; }
+
+/* LAYOUT & PULSANTI */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.btn { padding: 15px 30px; border-radius: 50px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; border: none; }
+.btn-ruby { background-color: var(--lux-ruby); color: white; box-shadow: 0 5px 15px rgba(152, 0, 46, 0.4); }
+.btn-ruby:hover { background-color: #7a0024; transform: translateY(-2px); }
+
+/* WIDGETS (WhatsApp & Garanzia) */
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: #FFF; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; transition: transform 0.3s; z-index: 9999; }
+.whatsapp-float:hover { transform: scale(1.1); }
+.method-trigger { position: fixed; bottom: 20px; left: 20px; background-color: #ffffff; color: var(--lux-blue); padding: 10px 20px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); cursor: pointer; z-index: 9998; display: flex; align-items: center; gap: 10px; border: 2px solid var(--lux-ruby); font-weight: 700; font-family: 'Montserrat', sans-serif; transition: all 0.3s ease; }
+.method-trigger:hover { background-color: var(--lux-ruby); color: white; transform: translateY(-5px); }
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 1024px) {
+    .menu-toggle { display: block; }
+    .nav-links { display: none; flex-direction: column; width: 100%; position: absolute; top: 100%; left: 0; background: white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); padding: 20px; gap: 15px; align-items: flex-start; }
+    .nav-links.active { display: flex; }
+    .dropdown { padding: 0; width: 100%; }
+    .dropdown-content { position: static; box-shadow: none; border-top: none; border-left: 2px solid var(--lux-ruby); margin-left: 10px; margin-top: 10px; display: none; width: 100%; }
+    .dropdown.active .dropdown-content { display: block; }
+    
+    .hero h1, .hero-product h1 { font-size: 2rem; }
+    .product-card, .content-grid, .footer-grid { grid-template-columns: 1fr !important; }
+    .method-trigger { bottom: 90px; left: 20px; } /* Alza la garanzia su mobile per non coprire altro */
+    .lux-wrapper { display: none; } /* Nasconde il logo Lux su mobile per fare spazio */
+}
+/* =========================================
+   FIX MOBILE: STRISCIA BIANCA E LOGO LUX
+   ========================================= */
+html, body {
+    overflow-x: hidden;
+}
+@media (max-width: 1024px) {
+    .lux-wrapper {
+        display: none !important;
+    }
+}
+
+/* =========================================
+   FIX MOBILE: MODALE GARANZIA
+   ========================================= */
+.modal-content {
+    width: 90% !important;
+    max-width: 600px !important;
+    margin: 10% auto !important;
+    box-sizing: border-box;
+}
