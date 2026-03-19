@@ -132,7 +132,11 @@
                         <!-- CAMPO NASCOSTO PER IL TRACCIAMENTO (Referrer) -->
 <input type="hidden" name="Pagina_di_Provenienza" id="form-source" value="">
                         
-                        <input type="text" name="Nome_Azienda" placeholder="Nome o Azienda *" required style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
+                        <!-- CAMPI NOME E AZIENDA AFFIANCATI -->
+<div style="display: flex; gap: 15px; flex-wrap: wrap;">
+    <input type="text" name="Nome_Referente" placeholder="Il tuo Nome e Cognome *" required style="flex: 1; min-width: 200px; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
+    <input type="text" name="Azienda" placeholder="Azienda" style="flex: 1; min-width: 200px; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
+</div>
                         <input type="email" name="Email" placeholder="Email *" required style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
                         <input type="tel" name="Telefono" placeholder="Telefono *" required style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
                         
@@ -150,7 +154,7 @@
                             <option value="Altro">Altro / Assistenza</option>
                         </select>
 
-                        <textarea name="Messaggio" placeholder="Come possiamo aiutarti?" rows="4" required style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; resize: vertical;"></textarea>
+                        <textarea name="Messaggio" placeholder="Come possiamo aiutarti? *" rows="4" required style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; resize: vertical;"></textarea>
                         
                         <label style="font-size: 0.85rem; color: #666; display: flex; gap: 10px; align-items: flex-start;">
                             <input type="checkbox" name="Privacy" required style="margin-top: 3px;">
