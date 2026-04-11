@@ -1,0 +1,115 @@
+/* ==========================================================================
+   ORIZZONTE SUD - GLOBAL STYLESHEET 
+   Versione: 2.2 (Final Stress-Test Passed)
+   ========================================================================== */
+
+:root { 
+    --lux-ruby: #98002E; 
+    --lux-blue: #00205B; 
+    --white: #ffffff; 
+    --text-dark: #333333; 
+    --bg-light: #fcfcfc;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: 'Open Sans', sans-serif; 
+    color: var(--text-dark); 
+    line-height: 1.6; 
+    background-color: var(--white); 
+    overflow-x: hidden; 
+}
+
+h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+
+/* HEADER & MENU */
+header { 
+    background: rgba(255, 255, 255, 0.98); 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; /* Header sta sopra a tutto */
+}
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; max-width: 1400px; margin: 0 auto; position: relative; }
+
+.nav-links { display: flex; gap: 25px; align-items: center; }
+.nav-links a { font-family: 'Montserrat', sans-serif; font-weight: 600; color: #555; font-size: 0.9rem; text-decoration: none; transition: color 0.3s ease; }
+.nav-links a:hover { color: var(--lux-ruby); }
+
+.dropdown { position: relative; display: inline-block; padding: 10px 0; }
+.dropdown-content { 
+    display: none; position: absolute; background-color: #ffffff; min-width: 260px; 
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1); z-index: 1001; border-radius: 8px; 
+    overflow: hidden; top: 100%; left: 0; border-top: 3px solid var(--lux-ruby); 
+}
+.dropdown-content a { color: #555; padding: 12px 20px; text-decoration: none; display: block; border-bottom: 1px solid #f0f0f0; font-size: 0.85rem; transition: all 0.3s ease; }
+.dropdown-content a:hover { background-color: #f9f9f9; color: var(--lux-ruby); padding-left: 25px; }
+.dropdown:hover .dropdown-content { display: block; }
+
+.menu-toggle { display: none; font-size: 1.8rem; color: var(--lux-blue); cursor: pointer; }
+
+/* HERO */
+.hero { background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; color: white; height: 80vh; min-height: 500px; }
+.hero-content { position: relative; z-index: 2; max-width: 900px; padding: 20px; }
+.hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
+
+/* LAYOUT & COMPONENTI */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.btn { padding: 15px 30px; border-radius: 5px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; border: none; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.4) !important; }
+
+.geo-problem, .geo-solution, .geo-result { padding: 10px 15px; border-radius: 5px; border-left: 3px solid transparent; transition: all 0.3s ease; }
+.geo-problem:hover { background-color: #fff9f5; border-left-color: #e67e22; }
+.geo-solution:hover { background-color: #f5fbff; border-left-color: #3498db; }
+.geo-result:hover { background-color: #f5fff9; border-left-color: #2ecc71; }
+
+.footer-link { color: #555; text-decoration: none; display: inline-block; transition: all 0.3s ease; }
+.footer-link:hover { color: var(--lux-ruby) !important; transform: translateX(5px); }
+
+/* WIDGETS FLUTTUANTI (Z-INDEX FIXATO A 990) */
+@keyframes pulse-wa { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+
+.whatsapp-float { 
+    position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: #FFF; 
+    width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; 
+    justify-content: center; font-size: 35px; text-decoration: none; transition: transform 0.3s; 
+    z-index: 990; /* FIX: Sta sotto al menu mobile */
+    animation: pulse-wa 2s infinite;
+}
+.whatsapp-float:hover { transform: scale(1.1); animation: none; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4); }
+
+.method-trigger { 
+    position: fixed; bottom: 20px; left: 20px; background-color: #ffffff; color: var(--lux-blue); 
+    padding: 10px 20px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+    cursor: pointer; z-index: 990; /* FIX: Sta sotto al menu mobile */
+    display: flex; align-items: center; gap: 10px; border: 2px solid var(--lux-ruby); 
+    font-weight: 700; font-family: 'Montserrat', sans-serif; transition: all 0.3s ease; 
+}
+.method-trigger:hover { background-color: var(--lux-ruby); color: white; transform: translateY(-5px); box-shadow: 0 10px 25px rgba(152, 0, 46, 0.3); }
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 1024px) {
+    .menu-toggle { display: block; }
+    .nav-links { 
+        display: none; flex-direction: column; width: 100%; position: absolute; 
+        top: 100%; left: 0; background: white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+        padding: 20px; gap: 15px; align-items: flex-start; max-height: 80vh; overflow-y: auto;
+    }
+    .nav-links.active { display: flex; }
+    .dropdown { padding: 0; width: 100%; }
+    .dropdown-content { position: static; box-shadow: none; border-top: none; border-left: 2px solid var(--lux-ruby); margin-left: 10px; margin-top: 10px; display: none; width: 100%; }
+    .dropdown.active .dropdown-content { display: block; }
+    .lux-wrapper { display: none !important; }
+    .hero h1 { font-size: 2.2rem; }
+}
+
+@media (max-width: 768px) {
+    .zigzag-row, .zigzag-row.reverse { flex-direction: column !important; gap: 30px !important; }
+    .method-trigger span { display: none; }
+    .method-trigger { padding: 15px; border-radius: 50%; bottom: 20px; left: 20px; }
+    .method-trigger i { font-size: 1.5rem; margin: 0; }
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--lux-ruby); outline-offset: 2px; }

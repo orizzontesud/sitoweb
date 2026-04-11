@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Utili | Orizzonte Sud</title>
+    
+    <!-- SEO: Nascosta a Google, ma trasferisce autorità ai link interni -->
+    <meta name="robots" content="noindex, follow"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { 
+            background-color: #fcfcfc; 
+            font-family: 'Open Sans', sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 50px 20px 20px; 
+            margin: 0; 
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        /* Stili Bottoni */
+        .link-btn { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 12px; 
+            width: 100%; 
+            max-width: 400px; 
+            background-color: #ffffff; 
+            color: #00205B; 
+            padding: 18px; 
+            margin-bottom: 15px; 
+            border-radius: 10px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            border: 2px solid transparent; 
+            transition: all 0.3s ease; 
+        }
+        
+        .link-btn:hover, .link-btn:active { 
+            border-color: #98002E; 
+            transform: translateY(-3px); 
+            box-shadow: 0 8px 20px rgba(152,0,46,0.15); 
+        }
+        
+        .link-btn.primary { 
+            background-color: #98002E; 
+            color: white; 
+        }
+        
+        .link-btn.primary:hover, .link-btn.primary:active { 
+            background-color: #7a0024; 
+            border-color: #7a0024; 
+        }
+        
+        /* Icone nei bottoni */
+        .link-btn i {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO UFFICIALE ORIZZONTE SUD -->
+    <div style="display: flex; flex-direction: column; width: max-content; margin: 0 auto 40px;">
+        <div style="display: flex; align-items: baseline;">
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; color: #00205B; font-weight: 700; letter-spacing: -0.5px; line-height: 1; margin-right: 8px;">ORIZZONTE</span>
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; color: #00205B; font-weight: 300; letter-spacing: -0.5px; line-height: 1;">SUD</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 4px;">
+            <div style="height: 5px; background-color: #98002E; width: 68%;"></div>
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; color: #00205B; font-weight: 700; letter-spacing: 0.5px; line-height: 1; padding-top: 2px;">DAL 1983</span>
+        </div>
+    </div>
+
+    <p style="color: #555; margin-bottom: 30px; text-align: center; font-size: 1.1rem;">Scegli come possiamo aiutarti oggi:</p>
+
+    <!-- LINK CON UTM TRACKING E INTENTI QUALIFICATI -->
+    <a href="noleggio.html?utm_source=social_bio&utm_medium=link_page" class="link-btn primary">
+        <i class="fas fa-file-signature"></i> Scopri il Noleggio Operativo (B2B)
+    </a>
+    
+    <a href="contatti.html?utm_source=social_bio&utm_medium=link_page" class="link-btn">
+        <i class="fas fa-calendar-check" style="color: #00205B;"></i> Richiedi Sopralluogo Gratuito
+    </a>
+    
+    <a href="https://wa.me/39081640438?text=Salve,%20vi%20ho%20trovati%20sui%20social%20e%20vorrei%20maggiori%20informazioni%20sui%20vostri%20servizi." target="_blank" class="link-btn">
+        <i class="fab fa-whatsapp" style="color: #25d366;"></i> Chatta su WhatsApp
+    </a>
+    
+    <a href="index.html?utm_source=social_bio&utm_medium=link_page" class="link-btn">
+        <i class="fas fa-globe" style="color: #00205B;"></i> Visita il Sito Web
+    </a>
+
+    <!-- FOOTER LEGALE OBBLIGATORIO -->
+    <div style="margin-top: auto; padding-top: 40px; text-align: center; font-size: 0.8rem; color: #aaa;">
+        &copy; 2026 ORIZZONTE SUD SAS - P.IVA: IT04276540632<br>
+        <a href="privacy.html" style="color: #aaa; text-decoration: underline; margin-top: 5px; display: inline-block;">Privacy Policy</a>
+    </div>
+
+</body>
+</html>
