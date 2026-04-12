@@ -113,3 +113,93 @@ header {
 }
 
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--lux-ruby); outline-offset: 2px; }
+
+/* ==========================================================================
+   SEZIONE FAQ (AEO - Answer Engine Optimization)
+   ========================================================================== */
+.faq-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item[open] {
+    border-color: var(--lux-ruby);
+    box-shadow: 0 5px 15px rgba(152, 0, 46, 0.1);
+}
+
+.faq-item summary {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--lux-blue);
+    cursor: pointer;
+    list-style: none; /* Rimuove la freccia di default su Chrome/Safari */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Rimuove la freccia di default su Safari */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Icona + e - personalizzata */
+.faq-item summary::after {
+    content: '\002B'; /* Simbolo Più */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: var(--lux-ruby);
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    content: '\2212'; /* Simbolo Meno */
+    transform: rotate(180deg);
+}
+
+.faq-item p {
+    padding: 0 20px 20px 20px;
+    color: #555;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin: 0;
+    border-top: 1px solid transparent;
+    animation: fadeInDown 0.4s ease-in-out;
+}
+
+.faq-item[open] p {
+    border-top-color: #f0f0f0;
+    padding-top: 20px;
+}
+
+/* Animazione fluida per l'apertura */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

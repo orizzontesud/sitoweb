@@ -14,30 +14,61 @@
     <meta property="og:url" content="https://www.orizzontesud.it/settore-horeca.html">
     <meta property="og:type" content="website">    
     
-    <!-- SEO INVISIBILE: ANTI-SHOWROOMING & KEYWORDS B2B -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Consulenza Housekeeping Hotel e B&B - Orizzonte Sud",
-      "alternateName":["Carrelli Pulizia Hotel", "Aspiratori Silenziosi Alberghi", "Lavamoquette Professionali", "Attrezzature Housekeeping B&B", "Numatic Hotel", "Orizzonte Sud Electrolux"],
-      "image": "https://www.orizzontesud.it/assets/img/logo-lux.png",
-      "@id": "https://www.orizzontesud.it/settore-horeca.html",
-      "url": "https://www.orizzontesud.it/settore-horeca.html",
-      "telephone": "081640438",
-      "description": "Consulenza B2B per l'housekeeping nel settore ospitalità. Forniamo carrelli modulari, aspiratori ultra-silenziosi e macchine lavamoquette per Hotel e B&B. Noleggio operativo disponibile.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Orizzonte Sud SAS",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via Alessandro Manzoni, 115",
-          "addressLocality": "Napoli",
-          "postalCode": "80123",
-          "addressCountry": "IT"
+    <!-- SEO & AEO INVISIBILE: SCHEMA PROFESSIONAL SERVICE + FAQ PAGE -->
+    <script type="application/ld+json">[
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Consulenza Housekeeping Hotel e B&B - Orizzonte Sud",
+        "alternateName":["Carrelli Pulizia Hotel", "Aspiratori Silenziosi Alberghi", "Lavamoquette Professionali", "Attrezzature Housekeeping B&B", "Numatic Hotel", "Orizzonte Sud Electrolux"],
+        "image": "https://www.orizzontesud.it/assets/img/logo-lux.png",
+        "@id": "https://www.orizzontesud.it/settore-horeca.html",
+        "url": "https://www.orizzontesud.it/settore-horeca.html",
+        "telephone": "081640438",
+        "description": "Consulenza B2B per l'housekeeping nel settore ospitalità. Forniamo carrelli modulari, aspiratori ultra-silenziosi e macchine lavamoquette per Hotel e B&B. Noleggio operativo disponibile.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Orizzonte Sud SAS",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Alessandro Manzoni, 115",
+            "addressLocality": "Napoli",
+            "postalCode": "80123",
+            "addressCountry": "IT"
+          }
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity":[
+          {
+            "@type": "Question",
+            "name": "Quali sono gli aspirapolvere più adatti per l'housekeeping in hotel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gli aspiratori per hotel devono avere tre caratteristiche fondamentali: estrema silenziosità (per non disturbare gli ospiti nelle camere adiacenti), leggerezza ed ergonomia per le governanti, e filtri ad alta efficienza per trattenere polveri sottili e allergeni."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come igienizzare la moquette delle camere d'albergo in modo efficace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La moquette richiede macchine a iniezione/estrazione (lavamoquette) che spruzzano una soluzione detergente nelle fibre e la aspirano immediatamente insieme allo sporco. Questo trattamento rimuove macchie, acari e cattivi odori, ravvivando i colori del tessuto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Conviene acquistare o noleggiare i carrelli per le pulizie alberghiere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Per le strutture ricettive, il noleggio operativo dell'intero parco macchine (carrelli modulari, aspiratori, lavamoquette) è altamente consigliato. Consente di avere attrezzature sempre efficienti e in perfetto stato estetico, scaricando interamente il costo a bilancio."
+            }
+          }
+        ]
       }
-    }
+    ]
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -46,7 +77,7 @@
 </head>
 <body>
     
-    <!-- WHATSAPP FLUTTUANTE (CON TESTO QUALIFICATO B2B) -->
+    <!-- WHATSAPP FLUTTUANTE -->
     <a href="https://wa.me/39081640438?text=Salve,%20vorrei%20una%20consulenza%20sulle%20attrezzature%20per%20l'Housekeeping%20del%20mio%20Hotel/B&B." target="_blank" aria-label="Contattaci su WhatsApp" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -131,7 +162,6 @@
                 <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px;">
                     
                     <div style="position: relative; flex-grow: 1;">
-                        <!-- Immagine 3:4 -->
                         <img src="assets/img/hotel-ambientata.jpg" alt="Carrelli modulari e aspiratori silenziosi professionali per housekeeping in hotel, resort e B&B" title="Attrezzature ergonomiche per il riassetto camere" style="width: 100%; height: 100%; border-radius: 10px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); object-fit: cover; aspect-ratio: 3/4;">
                     </div>
 
@@ -196,7 +226,7 @@
             </div>
         </section>
 
-        <!-- SEZIONE "IL METODO" (Sostituisce i Casi Studio Falsi) -->
+        <!-- SEZIONE "IL METODO" -->
         <section class="method-section" id="il-metodo" style="padding: 80px 20px; background-color: #ffffff; border-top: 1px solid #eee;">
             <div class="container" style="max-width: 1200px; margin: 0 auto;">
                 <div style="text-align: center; margin-bottom: 50px;">
@@ -231,6 +261,33 @@
             </div>
         </section>
 
+        <!-- SEZIONE AEO / FAQ -->
+        <section class="faq-section" style="background-color: #fcfcfc; padding: 80px 20px; border-top: 1px solid #eee;">
+            <div class="container">
+                <h2 style="color: #00205B; font-size: 2rem; margin-bottom: 40px; text-align: center;">Domande Frequenti sull'Housekeeping</h2>
+                
+                <div class="faq-container">
+                    <!-- FAQ 1 -->
+                    <details class="faq-item">
+                        <summary>Quali sono gli aspirapolvere più adatti per l'housekeeping in hotel?</summary>
+                        <p>Gli aspiratori per hotel devono avere tre caratteristiche fondamentali: estrema silenziosità (per non disturbare gli ospiti nelle camere adiacenti), leggerezza ed ergonomia per le governanti, e filtri ad alta efficienza per trattenere polveri sottili e allergeni.</p>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="faq-item">
+                        <summary>Come igienizzare la moquette delle camere d'albergo in modo efficace?</summary>
+                        <p>La moquette richiede macchine a iniezione/estrazione (lavamoquette) che spruzzano una soluzione detergente nelle fibre e la aspirano immediatamente insieme allo sporco. Questo trattamento rimuove macchie, acari e cattivi odori, ravvivando i colori del tessuto.</p>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="faq-item">
+                        <summary>Conviene acquistare o noleggiare i carrelli per le pulizie alberghiere?</summary>
+                        <p>Per le strutture ricettive, il noleggio operativo dell'intero parco macchine (carrelli modulari, aspiratori, lavamoquette) è altamente consigliato. Consente di avere attrezzature sempre efficienti e in perfetto stato estetico, scaricando interamente il costo a bilancio.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- BOTTONE GARANZIA ORIZZONTE -->
@@ -238,7 +295,7 @@
         <i class="fas fa-shield-alt"></i><span>Garanzia Orizzonte</span>
     </div>
 
-    <!-- FOOTER UNIVERSALE (INTERATTIVO E STANDARDIZZATO) -->
+    <!-- FOOTER UNIVERSALE -->
     <footer style="background-color: white; padding: 50px 20px 20px; border-top: 1px solid #eee; font-size: 0.9rem;">
         <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
             <div>
@@ -247,7 +304,6 @@
                     Distributore Esclusivo Lux.<br>
                     Forti della storica esperienza <strong>Electrolux</strong>, dal 1983 siamo al tuo fianco per garantire un ambiente sano, sicuro e produttivo.
                 </p>
-                <!-- Link WhatsApp Interattivo -->
                 <a href="https://wa.me/39081640438?text=Salve,%20vorrei%20una%20consulenza%20sulle%20attrezzature%20per%20l'Housekeeping%20del%20mio%20Hotel/B&B." class="footer-link" style="font-weight: bold;">
                     <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Chatta su WhatsApp
                 </a>
@@ -263,7 +319,6 @@
             <div>
                 <h4 style="color: #98002E; margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Contatti</h4>
                 <ul style="list-style: none; padding: 0; color: #555; line-height: 1.8;">
-                    <!-- Numeri e Mail resi Interattivi (Classe footer-link) -->
                     <li style="margin-bottom: 10px;">
                         <a href="tel:+39081640438" class="footer-link"><i class="fas fa-phone"></i> 081 640438</a>
                     </li>
@@ -281,7 +336,7 @@
         </div>
     </footer>
 
-    <!-- SCRIPT CENTRALIZZATO (Sostituisce lo script inline rimosso) -->
+    <!-- SCRIPT CENTRALIZZATO -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>

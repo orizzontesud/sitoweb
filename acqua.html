@@ -13,30 +13,61 @@
     <meta property="og:url" content="https://www.orizzontesud.it/acqua.html">
     <meta property="og:type" content="website">
     
-    <!-- SEO INVISIBILE: SCHEMA PROFESSIONAL SERVICE & LOCAL BUSINESS (WHITE-HAT ANTI-SHOWROOMING) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Consulenza Trattamento Acqua - Orizzonte Sud",
-      "alternateName":["Depuratori Acqua Lux", "Filtrazione Acqua Casa Sud Italia", "Orizzonte Sud Electrolux"],
-      "image": "https://www.orizzontesud.it/assets/img/logo-lux.png",
-      "@id": "https://www.orizzontesud.it/acqua.html",
-      "url": "https://www.orizzontesud.it/acqua.html",
-      "telephone": "081640438",
-      "description": "Consulenza specializzata per il trattamento dell'acqua domestica. Forti della nostra storica esperienza, offriamo soluzioni su misura: microfiltrazione, osmosi inversa e addolcitori contro calcare e PFAS.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Orizzonte Sud SAS",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via Alessandro Manzoni, 115",
-          "addressLocality": "Napoli",
-          "postalCode": "80123",
-          "addressCountry": "IT"
+    <!-- SEO & AEO INVISIBILE: SCHEMA PROFESSIONAL SERVICE + FAQ PAGE -->
+    <script type="application/ld+json">[
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Consulenza Trattamento Acqua - Orizzonte Sud",
+        "alternateName":["Depuratori Acqua Lux", "Filtrazione Acqua Casa Sud Italia", "Orizzonte Sud Electrolux"],
+        "image": "https://www.orizzontesud.it/assets/img/logo-lux.png",
+        "@id": "https://www.orizzontesud.it/acqua.html",
+        "url": "https://www.orizzontesud.it/acqua.html",
+        "telephone": "081640438",
+        "description": "Consulenza specializzata per il trattamento dell'acqua domestica. Forti della nostra storica esperienza, offriamo soluzioni su misura: microfiltrazione, osmosi inversa e addolcitori contro calcare e PFAS.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Orizzonte Sud SAS",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Alessandro Manzoni, 115",
+            "addressLocality": "Napoli",
+            "postalCode": "80123",
+            "addressCountry": "IT"
+          }
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity":[
+          {
+            "@type": "Question",
+            "name": "L'acqua del rubinetto è sicura da bere o serve per forza un depuratore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'acqua fornita dagli acquedotti è potabile e rigorosamente controllata. Tuttavia, durante il tragitto nelle tubature locali o condominiali, può accumulare calcare, cloro, sedimenti o metalli pesanti. Un sistema di microfiltrazione o osmosi inversa serve ad affinare quest'acqua, restituendole un sapore eccellente e la massima leggerezza direttamente dal rubinetto di casa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual è la differenza tra osmosi inversa e microfiltrazione?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La microfiltrazione rimuove cloro, odori e particelle solide, mantenendo inalterati i sali minerali; è ideale per acque già di buona qualità. L'osmosi inversa, invece, utilizza una membrana semipermeabile che abbatte anche calcare, nitrati e metalli pesanti, ed è consigliata in zone con acqua molto dura o sapore sgradevole."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I depuratori d'acqua domestici eliminano i PFAS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì, i sistemi di purificazione avanzata dotati di membrane a osmosi inversa e filtri a carboni attivi ad alta densità sono attualmente la tecnologia più efficace per abbattere la presenza di inquinanti emergenti come i PFAS (sostanze perfluoroalchiliche) dall'acqua potabile."
+            }
+          }
+        ]
       }
-    }
+    ]
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -45,7 +76,7 @@
 </head>
 <body>
     
-    <!-- WHATSAPP FLUTTUANTE (CON TESTO QUALIFICATO) -->
+    <!-- WHATSAPP FLUTTUANTE -->
     <a href="https://wa.me/39081640438?text=Salve,%20vorrei%20informazioni%20sui%20sistemi%20di%20purificazione%20Acqua%20per%20la%20Casa." target="_blank" aria-label="Contattaci su WhatsApp" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -111,7 +142,7 @@
     </header>
 
     <main>
-        <!-- HERO SECTION (Filtro 40% e Copy Empatico) -->
+        <!-- HERO SECTION -->
         <section class="hero" style="background: linear-gradient(rgba(0, 32, 91, 0.4), rgba(0, 32, 91, 0.4)), url('assets/img/hero-acqua.jpg') center/cover;">
             <div class="hero-content">
                 <h1 style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">L'Acqua perfetta, senza compromessi.</h1>
@@ -141,7 +172,6 @@
                     <span style="color: #98002E; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">Consulenza Trattamento Acqua</span>
                     <h2 style="color: #00205B; font-size: 2.2rem; margin-top: 10px; margin-bottom: 20px; line-height: 1.2;">Tecnologie su misura per la purezza della tua acqua.</h2>
                     
-                    <!-- PARAGRAFO PURO (Vendere la Consulenza, non la macchina) -->
                     <p style="color: #555; font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px;">
                         Non esiste un solo tipo di acqua. A seconda della zona in cui vivi, l'acqua di rete può presentare eccessi di calcare, cloro, metalli pesanti o inquinanti emergenti (come i PFAS). Non vendiamo "scatole chiuse": i nostri tecnici analizzano la tua acqua e ti guidano nella scelta tra filtrazione avanzata, osmosi inversa e addolcitori, per garantirti un'acqua eccellente direttamente dal tuo rubinetto.
                     </p>
@@ -188,6 +218,33 @@
             </div>
         </section>
 
+        <!-- SEZIONE AEO / FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 style="color: #00205B; font-size: 2rem; margin-bottom: 40px; text-align: center;">Domande Frequenti sul Trattamento Acqua</h2>
+                
+                <div class="faq-container">
+                    <!-- FAQ 1 -->
+                    <details class="faq-item">
+                        <summary>L'acqua del rubinetto è sicura da bere o serve per forza un depuratore?</summary>
+                        <p>L'acqua fornita dagli acquedotti è potabile e rigorosamente controllata. Tuttavia, durante il tragitto nelle tubature locali o condominiali, può accumulare calcare, cloro, sedimenti o metalli pesanti. Un sistema di microfiltrazione o osmosi inversa serve ad "affinare" quest'acqua, restituendole un sapore eccellente e la massima leggerezza direttamente dal rubinetto di casa.</p>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="faq-item">
+                        <summary>Qual è la differenza tra osmosi inversa e microfiltrazione?</summary>
+                        <p>La microfiltrazione rimuove cloro, odori e particelle solide, mantenendo inalterati i sali minerali; è ideale per acque già di buona qualità. L'osmosi inversa, invece, utilizza una membrana semipermeabile che abbatte anche calcare, nitrati e metalli pesanti, ed è consigliata in zone con acqua molto dura o sapore sgradevole.</p>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="faq-item">
+                        <summary>I depuratori d'acqua domestici eliminano i PFAS?</summary>
+                        <p>Sì, i sistemi di purificazione avanzata dotati di membrane a osmosi inversa e filtri a carboni attivi ad alta densità sono attualmente la tecnologia più efficace per abbattere la presenza di inquinanti emergenti come i PFAS (sostanze perfluoroalchiliche) dall'acqua potabile.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- BOTTONE GARANZIA ORIZZONTE -->
@@ -195,7 +252,7 @@
         <i class="fas fa-shield-alt"></i><span>Garanzia Orizzonte</span>
     </div>
 
-    <!-- FOOTER UNIVERSALE (INTERATTIVO E STANDARDIZZATO) -->
+    <!-- FOOTER UNIVERSALE -->
     <footer style="background-color: white; padding: 50px 20px 20px; border-top: 1px solid #eee; font-size: 0.9rem;">
         <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
             <div>
@@ -204,7 +261,6 @@
                     Distributore Esclusivo Lux.<br>
                     Forti della storica esperienza <strong>Electrolux</strong>, dal 1983 siamo al tuo fianco per garantire un ambiente sano, sicuro e produttivo.
                 </p>
-                <!-- Link WhatsApp Interattivo -->
                 <a href="https://wa.me/39081640438?text=Salve,%20vorrei%20informazioni%20sui%20sistemi%20di%20purificazione%20Acqua%20per%20la%20Casa." class="footer-link" style="font-weight: bold;">
                     <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Chatta su WhatsApp
                 </a>
@@ -220,7 +276,6 @@
             <div>
                 <h4 style="color: #98002E; margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Contatti</h4>
                 <ul style="list-style: none; padding: 0; color: #555; line-height: 1.8;">
-                    <!-- Numeri e Mail resi Interattivi (Classe footer-link gestita in style.css) -->
                     <li style="margin-bottom: 10px;">
                         <a href="tel:+39081640438" class="footer-link"><i class="fas fa-phone"></i> 081 640438</a>
                     </li>
@@ -238,7 +293,7 @@
         </div>
     </footer>
 
-    <!-- SCRIPT CENTRALIZZATO (Logiche in app.js, Core Web Vitals massimizzati) -->
+    <!-- SCRIPT CENTRALIZZATO -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -14,30 +14,61 @@
     <meta property="og:url" content="https://www.orizzontesud.it/settore-officine.html">
     <meta property="og:type" content="website">    
     
-    <!-- SEO INVISIBILE: ANTI-SHOWROOMING & KEYWORDS B2B -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Consulenza Aspirazione Industriale e Officine - Orizzonte Sud",
-      "alternateName":["Aspiratori Recupero Oli e Trucioli", "Bidoni Aspiratutto Professionali", "Aspiratori Carrozzeria Antistatici", "Aspiratori Numatic", "Aspiratori Coynco", "Orizzonte Sud Electrolux"],
-      "image": "https://www.orizzontesud.it/assets/img/logo-lux.png",
-      "@id": "https://www.orizzontesud.it/settore-officine.html",
-      "url": "https://www.orizzontesud.it/settore-officine.html",
-      "telephone": "081640438",
-      "description": "Consulenza B2B per l'aspirazione industriale. Forniamo aspiratori per impieghi gravosi, ideali per officine meccaniche, carrozzerie, tornerie e autolavaggi. Soluzioni per il recupero di liquidi, oli, trucioli metallici e polveri fini.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Orizzonte Sud SAS",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via Alessandro Manzoni, 115",
-          "addressLocality": "Napoli",
-          "postalCode": "80123",
-          "addressCountry": "IT"
+    <!-- SEO & AEO INVISIBILE: SCHEMA PROFESSIONAL SERVICE + FAQ PAGE -->
+    <script type="application/ld+json">[
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Consulenza Aspirazione Industriale e Officine - Orizzonte Sud",
+        "alternateName":["Aspiratori Recupero Oli e Trucioli", "Bidoni Aspiratutto Professionali", "Aspiratori Carrozzeria Antistatici", "Aspiratori Numatic", "Aspiratori Coynco", "Orizzonte Sud Electrolux"],
+        "image": "https://www.orizzontesud.it/assets/img/logo-lux.png",
+        "@id": "https://www.orizzontesud.it/settore-officine.html",
+        "url": "https://www.orizzontesud.it/settore-officine.html",
+        "telephone": "081640438",
+        "description": "Consulenza B2B per l'aspirazione industriale. Forniamo aspiratori per impieghi gravosi, ideali per officine meccaniche, carrozzerie, tornerie e autolavaggi. Soluzioni per il recupero di liquidi, oli, trucioli metallici e polveri fini.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Orizzonte Sud SAS",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Alessandro Manzoni, 115",
+            "addressLocality": "Napoli",
+            "postalCode": "80123",
+            "addressCountry": "IT"
+          }
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity":[
+          {
+            "@type": "Question",
+            "name": "Che tipo di aspiratore serve per recuperare olio e trucioli in torneria?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Serve un aspiratore industriale specifico per liquidi e trucioli, dotato di un cestello separatore. Questo sistema divide i residui metallici solidi dai liquidi lubrorefrigeranti (emulsioni o oli), permettendo il riutilizzo dei liquidi e il corretto smaltimento dei trucioli."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Perché un normale aspirapolvere si brucia se usato in carrozzeria?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le polveri di carteggiatura e i residui metallici sono estremamente fini e spesso conduttivi. Un normale aspiratore si intasa rapidamente, surriscaldando e bruciando il motore. In officina servono aspiratori con motori by-pass, filtri ad ampia superficie e fusti antistatici."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come eliminare le macchie d'olio dal pavimento dell'officina meccanica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Per sgrassare a fondo i pavimenti industriali sporchi di olio motore o grasso, la soluzione più rapida è l'utilizzo di una lavasciuga pavimenti professionale abbinata a un detergente alcalino specifico, che lava e asciuga in un unico passaggio evitando rischi di scivolamento."
+            }
+          }
+        ]
       }
-    }
+    ]
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -46,7 +77,7 @@
 </head>
 <body>
     
-    <!-- WHATSAPP FLUTTUANTE (CON TESTO QUALIFICATO B2B) -->
+    <!-- WHATSAPP FLUTTUANTE -->
     <a href="https://wa.me/39081640438?text=Salve,%20vorrei%20una%20consulenza%20sui%20sistemi%20di%20aspirazione%20per%20la%20mia%20officina." target="_blank" aria-label="Contattaci su WhatsApp" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -131,7 +162,6 @@
                 <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px;">
                     
                     <div style="position: relative; flex-grow: 1;">
-                        <!-- Immagine 3:4 -->
                         <img src="assets/img/officine-ambientata.jpg" alt="Aspiratore industriale potente per recupero oli lubrorefrigeranti, trucioli metallici e polveri in officina" title="Aspirazione gravosa per industria meccanica e tornerie" style="width: 100%; height: 100%; border-radius: 10px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); object-fit: cover; aspect-ratio: 3/4;">
                     </div>
 
@@ -196,7 +226,7 @@
             </div>
         </section>
 
-        <!-- SEZIONE CASI STUDIO (OTTIMIZZATA GEO) -->
+        <!-- SEZIONE CASI STUDIO -->
         <section class="testimonials-section" id="casi-studio" style="padding: 80px 20px; background-color: #ffffff;">
             <div class="container" style="max-width: 1200px; margin: 0 auto;">
                 <div style="text-align: center; margin-bottom: 50px;">
@@ -222,6 +252,33 @@
             </div>
         </section>
 
+        <!-- SEZIONE AEO / FAQ -->
+        <section class="faq-section" style="background-color: #fcfcfc; padding: 80px 20px; border-top: 1px solid #eee;">
+            <div class="container">
+                <h2 style="color: #00205B; font-size: 2rem; margin-bottom: 40px; text-align: center;">Domande Frequenti sull'Aspirazione Industriale</h2>
+                
+                <div class="faq-container">
+                    <!-- FAQ 1 -->
+                    <details class="faq-item">
+                        <summary>Che tipo di aspiratore serve per recuperare olio e trucioli in torneria?</summary>
+                        <p>Serve un aspiratore industriale specifico per liquidi e trucioli, dotato di un cestello separatore. Questo sistema divide i residui metallici solidi dai liquidi lubrorefrigeranti (emulsioni o oli), permettendo il riutilizzo dei liquidi e il corretto smaltimento dei trucioli.</p>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="faq-item">
+                        <summary>Perché un normale aspirapolvere si brucia se usato in carrozzeria?</summary>
+                        <p>Le polveri di carteggiatura e i residui metallici sono estremamente fini e spesso conduttivi. Un normale aspiratore si intasa rapidamente, surriscaldando e bruciando il motore. In officina servono aspiratori con motori by-pass, filtri ad ampia superficie e fusti antistatici.</p>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="faq-item">
+                        <summary>Come eliminare le macchie d'olio dal pavimento dell'officina meccanica?</summary>
+                        <p>Per sgrassare a fondo i pavimenti industriali sporchi di olio motore o grasso, la soluzione più rapida è l'utilizzo di una lavasciuga pavimenti professionale abbinata a un detergente alcalino specifico, che lava e asciuga in un unico passaggio evitando rischi di scivolamento.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- BOTTONE GARANZIA ORIZZONTE -->
@@ -229,7 +286,7 @@
         <i class="fas fa-shield-alt"></i><span>Garanzia Orizzonte</span>
     </div>
 
-    <!-- FOOTER UNIVERSALE (INTERATTIVO E STANDARDIZZATO) -->
+    <!-- FOOTER UNIVERSALE -->
     <footer style="background-color: white; padding: 50px 20px 20px; border-top: 1px solid #eee; font-size: 0.9rem;">
         <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
             <div>
@@ -238,7 +295,6 @@
                     Distributore Esclusivo Lux.<br>
                     Forti della storica esperienza <strong>Electrolux</strong>, dal 1983 siamo al tuo fianco per garantire un ambiente sano, sicuro e produttivo.
                 </p>
-                <!-- Link WhatsApp Interattivo -->
                 <a href="https://wa.me/39081640438?text=Salve,%20vorrei%20una%20consulenza%20sui%20sistemi%20di%20aspirazione%20per%20la%20mia%20officina." class="footer-link" style="font-weight: bold;">
                     <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Chatta su WhatsApp
                 </a>
@@ -254,7 +310,6 @@
             <div>
                 <h4 style="color: #98002E; margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Contatti</h4>
                 <ul style="list-style: none; padding: 0; color: #555; line-height: 1.8;">
-                    <!-- Numeri e Mail resi Interattivi (Classe footer-link) -->
                     <li style="margin-bottom: 10px;">
                         <a href="tel:+39081640438" class="footer-link"><i class="fas fa-phone"></i> 081 640438</a>
                     </li>
@@ -272,7 +327,7 @@
         </div>
     </footer>
 
-    <!-- SCRIPT CENTRALIZZATO (Sostituisce lo script inline rimosso) -->
+    <!-- SCRIPT CENTRALIZZATO -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>
