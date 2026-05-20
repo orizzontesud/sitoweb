@@ -121,13 +121,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ==========================================
-    // 6. INVIO FORM IN BACKGROUND (AJAX)
+    // 6. INVIO FORM IN BACKGROUND (AJAX) - WEB3FORMS
     // ==========================================
-    const forms = document.querySelectorAll('form[action^="https://formsubmit.co"]');
+    const forms = document.querySelectorAll('form[action^="https://api.web3forms.com"]');
     
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
-            e.preventDefault(); 
+            e.preventDefault(); // Impedisce di uscire dalla pagina
 
             const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.innerText;
@@ -136,13 +136,13 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.disabled = true;
             btn.style.opacity = "0.7";
 
-            const actionUrl = form.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
+            const actionUrl = form.action;
             const formData = new FormData(form);
 
             fetch(actionUrl, {
                 method: 'POST',
                 body: formData,
-                headers: { 'Accept': 'application/json' }
+                headers: { 'Accept': 'application/json' } // Forza la risposta in background senza ricaricare
             })
             .then(response => response.json())
             .then(data => {
@@ -152,6 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     btn.disabled = false;
                     btn.style.opacity = "1";
 
+                    // Mostra il tuo popup personalizzato
                     const successModal = document.createElement('div');
                     successModal.style.cssText = "position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,32,91,0.9); z-index:10001; display:flex; justify-content:center; align-items:center; backdrop-filter: blur(5px); opacity: 0; transition: opacity 0.3s ease;";
                     
@@ -179,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
 
                 } else {
-                    alert("Si è verificato un errore con il server. Riprova più tardi.");
+                    alert("Si è verificato un errore. Riprova più tardi.");
                     btn.innerText = originalText;
                     btn.disabled = false;
                     btn.style.opacity = "1";

@@ -155,11 +155,11 @@
                 <div style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                     <h3 style="color: #00205B; margin-bottom: 20px; font-size: 1.5rem;">Scrivici un messaggio</h3>
                     
-                    <form action="https://formsubmit.co/info@orizzontesud.it" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
-                        <!-- Configurazione FormSubmit (Rimosso _next per far funzionare AJAX) -->
-                        <input type="hidden" name="_subject" value="Nuova Richiesta di Consulenza dal Sito!">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
+                    <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                        <!-- Configurazione Web3Forms -->
+                        <input type="hidden" name="access_key" value="030020c6-bbe2-46ac-a7ad-7f3472d3dca6">
+                        <input type="hidden" name="subject" value="Nuova Richiesta di Consulenza dal Sito!">
+                        <input type="hidden" name="from_name" value="Sito Web Orizzonte Sud">
                         
                         <!-- CAMPO NASCOSTO PER IL TRACCIAMENTO (Gestito da app.js) -->
                         <input type="hidden" name="Pagina_di_Provenienza" id="form-source" value="">
